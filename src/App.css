@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  color: #333; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container {
+  background-color: #f9fafc; /* Light background */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+header, footer {
+  background-color: #1565c0;
   color: white;
+  text-align: center;
+  padding: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+header h1, footer p {
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Dashboard Styles */
+.dashboard {
+  background-color: #e8f5e9;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Chart Styles */
+.column-chart-container {
+  background-color: #e3f2fd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sparkline-charts > div {
+  background-color: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.apexcharts-bar-series .apexcharts-bar {
+  fill: #42a5f5 !important;
+}
+
+.apexcharts-line-series .apexcharts-marker {
+  fill: #ff7043 !important;
+}
+
+.apexcharts-line {
+  stroke: #26a69a !important;
+}
+
+.apexcharts-sparkline {
+  stroke: #ef5350 !important;
+}
+
+.apexcharts-tooltip {
+  background: #424242 !important;
+  color: #fff !important;
+}
+
+.apexcharts-legend-text {
+  color: #333 !important;
 }
